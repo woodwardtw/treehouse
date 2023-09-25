@@ -25,7 +25,8 @@ function treehouse_timeline(){
 				    <div class='date'>{$date}</div>
 				    <i class='icon fa fa-grimace'></i>
 				    <div class='content'>
-				      {$content}
+				    	{$title}
+				      	{$content}				    
 				    </div>
 				  </div>
 			";

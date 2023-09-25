@@ -16484,6 +16484,10 @@ figure.woocommerce-product-gallery__wrapper {
   box-sizing: border-box;
 }
 
+p {
+  font-size: 1.3rem;
+}
+
 /*TIMELINE STUFF*/
 .timeline {
   position: relative;
@@ -16565,11 +16569,11 @@ figure.woocommerce-product-gallery__wrapper {
 }
 
 .timeline-container.left .date {
-  right: -135px;
+  right: -175px;
 }
 
 .timeline-container.right .date {
-  left: -135px;
+  left: -175px;
 }
 
 .timeline-container .icon {
@@ -16634,6 +16638,7 @@ blockquote:before {
   line-height: 0.1em;
   margin-right: 0.25em;
   vertical-align: -0.3em;
+  font-family: serif;
 }
 
 @media (max-width: 767.98px) {
