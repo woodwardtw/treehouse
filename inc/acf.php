@@ -8,6 +8,34 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
+
+//timeline acf constructor 
+function treehouse_timeline(){
+	if(get_field('timeline_events')){
+		echo '<div class="timeline">';
+		$events = get_field('timeline_events');
+		//var_dump($events);
+		foreach ($events as $key => $event) {
+			$title = $event['title'] ? "<h2>".get_field('title')."</h2>" : '';
+			$content = $event['content'];
+			$align = ($key % 2 == 0) ? 'right' : 'left';
+			$date = $event['date'];
+			echo "
+				 <div class='timeline-container {$align}'>
+				    <div class='date'>{$date}</div>
+				    <i class='icon fa fa-grimace'></i>
+				    <div class='content'>
+				      {$content}
+				    </div>
+				  </div>
+			";
+		}
+		echo '</div>';
+
+	}
+}
+
+
 	//save acf json
 		add_filter('acf/settings/save_json', 'treehouse_json_save_point');
 		 

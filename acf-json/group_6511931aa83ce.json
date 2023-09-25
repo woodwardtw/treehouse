@@ -16,7 +16,7 @@
                 "class": "",
                 "id": ""
             },
-            "layout": "table",
+            "layout": "block",
             "pagination": 0,
             "min": 0,
             "max": 0,
@@ -30,11 +30,11 @@
                     "name": "title",
                     "aria-label": "",
                     "type": "text",
-                    "instructions": "",
+                    "instructions": "Optional. If used, keep it short.",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "",
+                        "width": "50",
                         "class": "",
                         "id": ""
                     },
@@ -43,6 +43,25 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
+                    "parent_repeater": "field_6511931b59494"
+                },
+                {
+                    "key": "field_651193e059498",
+                    "label": "Date",
+                    "name": "date",
+                    "aria-label": "",
+                    "type": "date_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "display_format": "m\/d\/Y",
+                    "return_format": "F j, Y",
+                    "first_day": 1,
                     "parent_repeater": "field_6511931b59494"
                 },
                 {
@@ -91,25 +110,6 @@
                     "mime_types": "",
                     "preview_size": "medium",
                     "parent_repeater": "field_6511931b59494"
-                },
-                {
-                    "key": "field_651193e059498",
-                    "label": "Date",
-                    "name": "date",
-                    "aria-label": "",
-                    "type": "date_picker",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "display_format": "m\/d\/Y",
-                    "return_format": "F j, Y",
-                    "first_day": 1,
-                    "parent_repeater": "field_6511931b59494"
                 }
             ]
         }
@@ -132,5 +132,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1695650849
+    "modified": 1695651110
 }
