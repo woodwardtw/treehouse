@@ -52,9 +52,9 @@ function dlinq_acf_fields_flexible_content_layout_title( $title, $field, $layout
         $title .= ' - ' . get_sub_field('accordion_title');     
     }
 
-
     return $title;
 }
+
 
 
 	//save acf json

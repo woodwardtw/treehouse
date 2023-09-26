@@ -16,7 +16,7 @@
                 $order_right = ' order-first ';
             }
             ?>
-        <div class='row topic-row <?php echo $color;?>'>
+        <div class='row topic-row <?php echo $color;?> d-flex align-items-center'>
 				<div class='col-md-5<?php echo $order_left;?>'>    
                     <figure>
                         <?php echo wp_get_attachment_image( $image['ID'], 'large', '', array('class'=>'img-fluid alignright') ); ?>
@@ -38,7 +38,7 @@
             $content = get_sub_field('content');
             $slug = sanitize_title($title);
         ?>
-            <div class='row topic-row full-width-row'>
+            <div class='row topic-row full-width-row d-flex align-items-center'>
 				<div class='col-md-6 offset-md-3'>
                     <?php if($title):?>
                         <h2 id="<?php echo $slug?>"><?php echo $title;?></h2>
