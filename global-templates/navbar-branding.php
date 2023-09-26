@@ -15,6 +15,7 @@ if ( ! has_custom_logo() ) { ?>
 
 		<h1 class="navbar-brand mb-0">
 			<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop="url">
+					<img src="<?php echo get_template_directory_uri();?>/imgs/thf-logo.svg" class="menu-logo" alt="T H F in stylized text to represent the Tree House Fund">
 				<?php bloginfo( 'name' ); ?>
 			</a>
 		</h1>
@@ -22,6 +23,7 @@ if ( ! has_custom_logo() ) { ?>
 	<?php else : ?>
 
 		<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop="url">
+			<img src="<?php echo get_template_directory_uri();?>/imgs/thf-logo.svg" class="menu-logo" alt="T H F in stylized text to represent the Tree House Fund">
 			<?php bloginfo( 'name' ); ?>
 		</a>
 
