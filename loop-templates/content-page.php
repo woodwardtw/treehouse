@@ -11,25 +11,27 @@ defined( 'ABSPATH' ) || exit;
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-	<?php
-	if ( ! is_page_template( 'page-templates/no-title.php' ) ) {
-		the_title(
-			'<header class="entry-header"><h1 class="entry-title">',
-			'</h1></header><!-- .entry-header -->'
-		);
-	}
-
-	echo get_the_post_thumbnail( $post->ID, 'large' );
+<?php
+	echo get_the_post_thumbnail( $post->ID, 'full', array('class'=>'img-fluid aligncenter') );	
 	?>
-
-	<div class="entry-content">
-
-		<?php
-		the_content();
-		understrap_link_pages();
-		?>
-
-	</div><!-- .entry-content -->
+	<div class="row">		
+		<div class="col-md-6 offset-md-3">
+			<?php 
+			if ( ! is_page_template( 'page-templates/no-title.php' ) ) {
+					the_title(
+						'<header class="entry-header"><h1 class="entry-title">',
+						'</h1></header><!-- .entry-header -->'
+					);
+				}
+			 ?>
+			<div class="entry-content">
+				<?php
+				the_content();		
+				understrap_link_pages();
+				?>
+			</div><!-- .entry-content -->
+		</div>
+	</div>
 
 	<footer class="entry-footer">
 

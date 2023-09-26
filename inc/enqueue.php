@@ -29,7 +29,7 @@ if ( ! function_exists( 'understrap_scripts' ) ) {
 
 		$css_version = $theme_version . '.' . filemtime( get_template_directory() . $theme_styles ); // @phpstan-ignore-line -- file exists
 		wp_enqueue_style( 'understrap-styles', get_template_directory_uri() . $theme_styles, array(), $css_version );
-
+		wp_enqueue_style( 'fonts', get_template_directory_uri() . '/fonts/AbrilFatface-Regular.ttf', array(), $css_version );
 		// Fix that the offcanvas close icon is hidden behind the admin bar.
 		if ( 'bootstrap4' !== $bootstrap_version && is_admin_bar_showing() ) {
 			understrap_offcanvas_admin_bar_inline_styles();

@@ -15,7 +15,7 @@ defined( 'ABSPATH' ) || exit;
 	echo get_the_post_thumbnail( $post->ID, 'full' );	
 	?>
 	<div class="row">		
-		<div class="col-md-8 offset-md-2">
+		<div class="col-md-6 offset-md-3">
 			<?php 
 			if ( ! is_page_template( 'page-templates/no-title.php' ) ) {
 					the_title(
