@@ -16,6 +16,10 @@ h1 {
 	font-size: 5rem;
 }
 
+h2 {
+	font-size: 4rem;
+}
+
 p {
 	font-size: 1.3rem;
 }
@@ -38,7 +42,7 @@ p {
   content: '';
   position: absolute;
   width: 2px;
-  background: #006E51;
+  background: $dark-green;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -68,7 +72,7 @@ p {
   top: calc(50% - 8px);
   right: -8px;
   background: #ffffff;
-  border: 2px solid #006E51;
+  border: 2px solid $dark-green;
   border-radius: 16px;
   z-index: 1;
 }
@@ -84,7 +88,7 @@ p {
   height: 2px;
   top: calc(50% - 1px);
   right: 8px;
-  background: #006E51;
+  background: $dark-green;
   z-index: 1;
 }
 
@@ -99,7 +103,7 @@ p {
   text-align: right;
   font-size: 14px;
   font-weight: bold;
-  color: #006E51;
+  color: $dark-green;
   text-transform: uppercase;
   letter-spacing: 1px;
   z-index: 1;
@@ -120,12 +124,12 @@ p {
   height: 40px;
   padding: 9px 0;
   top: calc(50% - 20px);
-  background: #F6D155;
-  border: 2px solid #006E51;
+  background: $yellow;
+  border: 2px solid $dark-green;
   border-radius: 40px;
   text-align: center;
   font-size: 18px;
-  color: #006E51;
+  color: $dark-green;
   z-index: 1;
 }
 
@@ -133,9 +137,11 @@ p {
   right: 56px;
 }
 
+
 .timeline-container.right .icon {
   left: 56px;
 }
+
 
 .timeline-container .content {
   padding: 30px 90px 30px 30px;
@@ -151,25 +157,26 @@ p {
 
 .timeline-container .content h2 {
   margin: 0 0 10px 0;
-  font-size: 18px;
-  font-weight: normal;
-  color: #006E51;
+  font-size: 2.5rem;
+  color: $dark-green;
 }
 
 .timeline-container .content p {
   margin: 0;
-  font-size: 16px;
-  line-height: 22px;
-  color: #000000;
 }
 
-blockquote {
-  font-size: 1.3rem;
+
+.timeline-container .content blockquote p{
+	margin-left: 50px;
+}
+
+.timeline-container blockquote {
+  font-size: 1.5rem;
   font-style: italic;
 }
 
-blockquote:before {
-  color: #50443c;
+.timeline-container blockquote:before {
+  color: $dark-green;
   content: '\201C';
   font-size: 4em;
   line-height: 0.1em;

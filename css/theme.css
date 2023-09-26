@@ -12,7 +12,7 @@
   --bs-pink: #d63384;
   --bs-red: #dc3545;
   --bs-orange: #ea854c;
-  --bs-yellow: #ffc107;
+  --bs-yellow: #F6D155;
   --bs-green: #198754;
   --bs-teal: #20c997;
   --bs-cyan: #0dcaf0;
@@ -33,7 +33,7 @@
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
-  --bs-warning: #ffc107;
+  --bs-warning: #F6D155;
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
@@ -41,7 +41,7 @@
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
-  --bs-warning-rgb: 255, 193, 7;
+  --bs-warning-rgb: 246, 209, 85;
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
@@ -71,7 +71,7 @@
   --bs-link-color: #2a2e35;
   --bs-link-hover-color: #22252a;
   --bs-code-color: #d63384;
-  --bs-highlight-bg: #fff3cd;
+  --bs-highlight-bg: #fdf6dd;
 }
 
 *,
@@ -2094,13 +2094,13 @@ progress {
 
 .table-warning {
   --bs-table-color: #000;
-  --bs-table-bg: #fff3cd;
-  --bs-table-border-color: #e6dbb9;
-  --bs-table-striped-bg: #f2e7c3;
+  --bs-table-bg: #fdf6dd;
+  --bs-table-border-color: #e4ddc7;
+  --bs-table-striped-bg: #f0ead2;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #e6dbb9;
+  --bs-table-active-bg: #e4ddc7;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #ece1be;
+  --bs-table-hover-bg: #eae4cc;
   --bs-table-hover-color: #000;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
@@ -3924,19 +3924,19 @@ textarea.form-control-lg {
 
 .btn-warning {
   --bs-btn-color: #000;
-  --bs-btn-bg: #ffc107;
-  --bs-btn-border-color: #ffc107;
+  --bs-btn-bg: #F6D155;
+  --bs-btn-border-color: #F6D155;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #ffca2c;
-  --bs-btn-hover-border-color: #ffc720;
-  --bs-btn-focus-shadow-rgb: 217, 164, 6;
+  --bs-btn-hover-bg: #f7d86f;
+  --bs-btn-hover-border-color: #f7d666;
+  --bs-btn-focus-shadow-rgb: 209, 178, 72;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #ffcd39;
-  --bs-btn-active-border-color: #ffc720;
+  --bs-btn-active-bg: #f8da77;
+  --bs-btn-active-border-color: #f7d666;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #000;
-  --bs-btn-disabled-bg: #ffc107;
-  --bs-btn-disabled-border-color: #ffc107;
+  --bs-btn-disabled-bg: #F6D155;
+  --bs-btn-disabled-border-color: #F6D155;
 }
 
 .btn-danger, .woocommerce-notices-wrapper .woocommerce-message.woocommerce-error a.button {
@@ -4059,19 +4059,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-warning {
-  --bs-btn-color: #ffc107;
-  --bs-btn-border-color: #ffc107;
+  --bs-btn-color: #F6D155;
+  --bs-btn-border-color: #F6D155;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #ffc107;
-  --bs-btn-hover-border-color: #ffc107;
-  --bs-btn-focus-shadow-rgb: 255, 193, 7;
+  --bs-btn-hover-bg: #F6D155;
+  --bs-btn-hover-border-color: #F6D155;
+  --bs-btn-focus-shadow-rgb: 246, 209, 85;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #ffc107;
-  --bs-btn-active-border-color: #ffc107;
+  --bs-btn-active-bg: #F6D155;
+  --bs-btn-active-border-color: #F6D155;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #ffc107;
+  --bs-btn-disabled-color: #F6D155;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #ffc107;
+  --bs-btn-disabled-border-color: #F6D155;
   --bs-gradient: none;
 }
 
@@ -5762,12 +5762,12 @@ textarea.form-control-lg {
 }
 
 .alert-warning {
-  --bs-alert-color: #664d03;
-  --bs-alert-bg: #fff3cd;
-  --bs-alert-border-color: #ffecb5;
+  --bs-alert-color: #625422;
+  --bs-alert-bg: #fdf6dd;
+  --bs-alert-border-color: #fcf1cc;
 }
 .alert-warning .alert-link {
-  color: #523e02;
+  color: #4e431b;
 }
 
 .alert-danger, .woocommerce-notices-wrapper .woocommerce-message.woocommerce-error {
@@ -6154,17 +6154,17 @@ textarea.form-control-lg {
 }
 
 .list-group-item-warning {
-  color: #664d03;
-  background-color: #fff3cd;
+  color: #625422;
+  background-color: #fdf6dd;
 }
 .list-group-item-warning.list-group-item-action:hover, .list-group-item-warning.list-group-item-action:focus {
-  color: #664d03;
-  background-color: #e6dbb9;
+  color: #625422;
+  background-color: #e4ddc7;
 }
 .list-group-item-warning.list-group-item-action.active {
   color: #fff;
-  background-color: #664d03;
-  border-color: #664d03;
+  background-color: #625422;
+  border-color: #625422;
 }
 
 .list-group-item-danger {
@@ -7791,7 +7791,7 @@ textarea.form-control-lg {
 
 .text-bg-warning {
   color: #000 !important;
-  background-color: RGBA(255, 193, 7, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(246, 209, 85, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-danger {
@@ -7838,10 +7838,10 @@ textarea.form-control-lg {
 }
 
 .link-warning {
-  color: #ffc107 !important;
+  color: #F6D155 !important;
 }
 .link-warning:hover, .link-warning:focus {
-  color: #ffcd39 !important;
+  color: #f8da77 !important;
 }
 
 .link-danger {
@@ -13048,16 +13048,16 @@ a.skip-link:not(:focus):not(:focus-within) {
 
 .has-yellow-color,
 .has-yellow-color:visited {
-  color: #ffc107;
+  color: #F6D155;
 }
 
 .has-yellow-background-color {
-  background-color: #ffc107;
-  border-color: #ffc107;
+  background-color: #F6D155;
+  border-color: #F6D155;
 }
 
 .wp-block-button:hover .wp-block-button__link.has-white-background-color.has-yellow-color {
-  color: #ffc107;
+  color: #F6D155;
 }
 
 .has-green-color,
@@ -13216,16 +13216,16 @@ a.skip-link:not(:focus):not(:focus-within) {
 
 .has-warning-color,
 .has-warning-color:visited {
-  color: #ffc107;
+  color: #F6D155;
 }
 
 .has-warning-background-color {
-  background-color: #ffc107;
-  border-color: #ffc107;
+  background-color: #F6D155;
+  border-color: #F6D155;
 }
 
 .wp-block-button:hover .wp-block-button__link.has-white-background-color.has-warning-color {
-  color: #ffc107;
+  color: #F6D155;
 }
 
 .has-danger-color,
@@ -16493,6 +16493,10 @@ h1, .h1 {
   font-size: 5rem;
 }
 
+h2, .h2 {
+  font-size: 4rem;
+}
+
 p {
   font-size: 1.3rem;
 }
@@ -16627,25 +16631,25 @@ p {
 
 .timeline-container .content h2, .timeline-container .content .h2 {
   margin: 0 0 10px 0;
-  font-size: 18px;
-  font-weight: normal;
+  font-size: 2.5rem;
   color: #006E51;
 }
 
 .timeline-container .content p {
   margin: 0;
-  font-size: 16px;
-  line-height: 22px;
-  color: #000000;
 }
 
-blockquote {
-  font-size: 1.3rem;
+.timeline-container .content blockquote p {
+  margin-left: 50px;
+}
+
+.timeline-container blockquote {
+  font-size: 1.5rem;
   font-style: italic;
 }
 
-blockquote:before {
-  color: #50443c;
+.timeline-container blockquote:before {
+  color: #006E51;
   content: "“";
   font-size: 4em;
   line-height: 0.1em;
