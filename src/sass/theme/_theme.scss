@@ -28,6 +28,32 @@ p {
 	margin-top: 100px;
 }
 
+/*flex content*/
+
+.topic-row {
+	padding: 100px;
+}
+
+.topic-row.green{
+	background-color: $green;
+}
+
+.topic-row.black {
+	background-color: #000;
+}
+
+.topic-row.yellow {
+	background-color: $yellow;
+}
+
+.topic-row.gray {
+	background-color: $gray;
+}
+
+.topic-row.green p, .topic-row.green h1, .topic-row.green h2, .topic-row.green h3, 
+.topic-row.black p, .topic-row.black h1, .topic-row.black h2, .topic-row.black h3 {
+	color: #fff;
+}
 
 /*TIMELINE STUFF*/
 .timeline {
@@ -186,6 +212,10 @@ p {
 }
 
 @media (max-width: 767.98px) {
+	.topic-row {
+		padding: 50px 20px;
+	}
+
   .timeline::after {
     left: 90px;
   }

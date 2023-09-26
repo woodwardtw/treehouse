@@ -32,6 +32,7 @@ defined( 'ABSPATH' ) || exit;
 			</div><!-- .entry-content -->
 		</div>
 	</div>
+	<?php get_template_part( 'loop-templates/content', 'flexcontent' );?>
 
 	<footer class="entry-footer">
 

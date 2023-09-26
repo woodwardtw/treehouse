@@ -33,7 +33,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "",
+                                "width": "70",
                                 "class": "",
                                 "id": ""
                             },
@@ -42,6 +42,29 @@
                             "placeholder": "",
                             "prepend": "",
                             "append": ""
+                        },
+                        {
+                            "key": "field_6512e577e6a1b",
+                            "label": "Image align",
+                            "name": "image_align",
+                            "aria-label": "",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "30",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "left": "Left",
+                                "right": "Right"
+                            },
+                            "default_value": "",
+                            "return_format": "value",
+                            "allow_null": 0,
+                            "layout": "horizontal"
                         },
                         {
                             "key": "field_6512e554e6a19",
@@ -53,7 +76,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "",
+                                "width": "50",
                                 "class": "",
                                 "id": ""
                             },
@@ -73,11 +96,11 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "",
+                                "width": "50",
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "id",
+                            "return_format": "array",
                             "library": "all",
                             "min_width": "",
                             "min_height": "",
@@ -89,11 +112,11 @@
                             "preview_size": "medium"
                         },
                         {
-                            "key": "field_6512e577e6a1b",
-                            "label": "Image align",
-                            "name": "image_align",
+                            "key": "field_6512ed2211477",
+                            "label": "Color",
+                            "name": "color",
                             "aria-label": "",
-                            "type": "button_group",
+                            "type": "select",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -103,13 +126,18 @@
                                 "id": ""
                             },
                             "choices": {
-                                "left": "Left",
-                                "right": "Right"
+                                "green": "Green",
+                                "yellow": "Yellow",
+                                "black": "Black",
+                                "white": "White"
                             },
-                            "default_value": "",
+                            "default_value": "white",
                             "return_format": "value",
+                            "multiple": 0,
                             "allow_null": 0,
-                            "layout": "horizontal"
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
                         }
                     ],
                     "min": "",
@@ -174,9 +202,16 @@
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "page_template",
                 "operator": "==",
-                "value": "post"
+                "value": "page-templates\/fullwidthpage.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-templates\/timeline.php"
             }
         ]
     ],
@@ -189,5 +224,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1695737358
+    "modified": 1695739235
 }
