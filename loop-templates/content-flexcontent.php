@@ -36,9 +36,10 @@
          <?php if( get_row_layout() == 'full_block' ): 
             $title = get_sub_field('title');
             $content = get_sub_field('content');
+            $color = get_sub_field('color');
             $slug = sanitize_title($title);
         ?>
-            <div class='row topic-row full-width-row d-flex align-items-center'>
+            <div class='row topic-row full-width-row <?php echo $color;?> d-flex align-items-center'>
 				<div class='col-md-6 offset-md-3'>
                     <?php if($title):?>
                         <h2 id="<?php echo $slug?>"><?php echo $title;?></h2>
