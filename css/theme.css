@@ -16506,8 +16506,12 @@ p {
 }
 
 /*flex content*/
+.title-row {
+  padding: 30px 100px;
+}
+
 .topic-row {
-  padding: 100px;
+  padding: 100px 100px;
 }
 
 .topic-row.green {
@@ -16685,7 +16689,7 @@ p {
 }
 
 @media (max-width: 767.98px) {
-  .topic-row {
+  .title-row, .topic-row {
     padding: 50px 20px;
   }
 
