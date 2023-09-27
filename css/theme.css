@@ -16543,7 +16543,8 @@ p {
 }
 
 blockquote.big-quote {
-  background-color: rgba(0, 104, 55, 0.2);
+  box-shadow: 15px 15px #efefef;
+  border: 2px solid #000000;
 }
 
 blockquote.big-quote p {
@@ -16570,7 +16571,7 @@ blockquote.big-quote:before {
 }
 
 blockquote.big-quote footer {
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 blockquote.big-quote footer p {
