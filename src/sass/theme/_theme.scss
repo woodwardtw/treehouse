@@ -28,6 +28,19 @@ p {
 	margin-top: 100px;
 }
 
+figure {
+  padding: 10px;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+}
+
+figcaption, .wp-caption-text {
+  margin: 15px 20px;
+  font-size: .8rem;
+  font-weight: 300;
+  line-height: .9rem;
+}
+
 /*header menu*/
 .menu-logo {
 	height: auto;
@@ -99,6 +112,7 @@ blockquote.big-quote:before {
 
 blockquote.big-quote footer {
 	margin: 20px 0;
+	text-decoration: none;
 }
 
 blockquote.big-quote footer p {

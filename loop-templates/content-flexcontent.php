@@ -19,7 +19,7 @@
         <div class='row topic-row <?php echo $color;?> d-flex align-items-center'>
 				<div class='col-md-5<?php echo $order_left;?>'>    
                     <figure>
-                        <?php echo wp_get_attachment_image( $image['ID'], 'large', '', array('class'=>'img-fluid alignright') ); ?>
+                        <?php echo wp_get_attachment_image( $image['ID'], 'large', '', array('class'=>'img-fluid aligncenter') ); ?>
                         <figcaption><?php echo $image['caption']; ?></figcaption>
                     </figure>
                 </div>
