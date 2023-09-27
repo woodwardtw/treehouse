@@ -75,7 +75,20 @@
 
             </div>
         <?php endif;?>
-
+        <!--Big Quote loop-->
+         <?php if( get_row_layout() == 'big_quote' ): 
+            $content = get_sub_field('quote');
+            $source = get_sub_field('quote_source')
+        ?>
+            <div class='row topic-row full-width-row d-flex align-items-center'>
+                <div class='col-md-6 offset-md-3'>                   
+                    <blockquote class="big-quote">
+                        <?php echo $content;?>
+                        <footer><?php echo $source;?></footer>
+                    </blockquote>
+                </div>
+            </div>
+        <?php endif;?>
   
          <!--person loop-->
          <?php if( get_row_layout() == 'people' ): 

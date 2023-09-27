@@ -285,8 +285,8 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "display_format": "F j, Y",
-                                    "return_format": "F j, Y",
+                                    "display_format": "m\/d\/Y",
+                                    "return_format": "m\/d\/Y",
                                     "first_day": 1,
                                     "parent_repeater": "field_6514218c94d25"
                                 },
@@ -312,6 +312,56 @@
                                     "parent_repeater": "field_6514218c94d25"
                                 }
                             ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_65144b15f0719": {
+                    "key": "layout_65144b15f0719",
+                    "name": "big_quote",
+                    "label": "Big Quote",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_65144b1df071b",
+                            "label": "Quote",
+                            "name": "quote",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_65144b29f071c",
+                            "label": "Quote Source",
+                            "name": "quote_source",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
                         }
                     ],
                     "min": "",
@@ -348,5 +398,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1695818694
+    "modified": 1695828851
 }

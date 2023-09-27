@@ -16542,6 +16542,45 @@ p {
   color: #fff;
 }
 
+blockquote.big-quote {
+  background-color: rgba(0, 104, 55, 0.2);
+}
+
+blockquote.big-quote p {
+  margin-left: 50px;
+  padding: 0 40px;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-style: italic;
+}
+
+blockquote.big-quote {
+  font-size: 2.5rem;
+  font-style: italic;
+}
+
+blockquote.big-quote:before {
+  color: #006837;
+  content: "“";
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.3em;
+  font-family: serif;
+}
+
+blockquote.big-quote footer {
+  margin-top: 20px;
+}
+
+blockquote.big-quote footer p {
+  border-left: none;
+  font-size: 1.5rem;
+  margin: 0 0 0 90px;
+  padding: 0;
+  font-weight: 100;
+}
+
 /*TIMELINE STUFF*/
 .timeline {
   position: relative;
@@ -16555,7 +16594,7 @@ p {
   content: "";
   position: absolute;
   width: 2px;
-  background: #006E51;
+  background: #006837;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -16585,7 +16624,7 @@ p {
   top: calc(50% - 8px);
   right: -8px;
   background: #ffffff;
-  border: 2px solid #006E51;
+  border: 2px solid #006837;
   border-radius: 16px;
   z-index: 1;
 }
@@ -16601,7 +16640,7 @@ p {
   height: 2px;
   top: calc(50% - 1px);
   right: 8px;
-  background: #006E51;
+  background: #006837;
   z-index: 1;
 }
 
@@ -16616,7 +16655,7 @@ p {
   text-align: right;
   font-size: 14px;
   font-weight: bold;
-  color: #006E51;
+  color: #006837;
   text-transform: uppercase;
   letter-spacing: 1px;
   z-index: 1;
@@ -16638,11 +16677,11 @@ p {
   padding: 9px 0;
   top: calc(50% - 20px);
   background: #F6D155;
-  border: 2px solid #006E51;
+  border: 2px solid #006837;
   border-radius: 40px;
   text-align: center;
   font-size: 18px;
-  color: #006E51;
+  color: #006837;
   z-index: 1;
 }
 
@@ -16669,7 +16708,7 @@ p {
 .timeline-container .content h2, .timeline-container .content .h2 {
   margin: 0 0 10px 0;
   font-size: 2.5rem;
-  color: #006E51;
+  color: #006837;
 }
 
 .timeline-container .content p {
@@ -16678,6 +16717,8 @@ p {
 
 .timeline-container .content blockquote p {
   margin-left: 50px;
+  padding: 0 20px;
+  border-left: 2px solid #006837;
 }
 
 .timeline-container blockquote {
@@ -16686,7 +16727,7 @@ p {
 }
 
 .timeline-container blockquote:before {
-  color: #006E51;
+  color: #006837;
   content: "“";
   font-size: 4em;
   line-height: 0.1em;
