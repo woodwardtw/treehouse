@@ -21,7 +21,7 @@
             "min": 0,
             "max": 0,
             "collapsed": "field_651193e059498",
-            "button_label": "Add Row",
+            "button_label": "Add Event",
             "rows_per_page": 20,
             "sub_fields": [
                 {
@@ -132,5 +132,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1695747945
+    "modified": 1695750615
 }

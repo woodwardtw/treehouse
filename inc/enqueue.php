@@ -73,3 +73,10 @@ if ( ! function_exists( 'understrap_offcanvas_admin_bar_inline_styles' ) ) {
 		wp_add_inline_style( 'understrap-styles', $css );
 	}
 }
+
+
+//ADMIN STYLES
+function treehouse_admin_theme_style() {
+    wp_enqueue_style('my-admin-style', get_template_directory_uri() . '/admin-css/treehouse.css');
+}
+add_action('admin_enqueue_scripts', 'treehouse_admin_theme_style');

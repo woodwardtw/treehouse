@@ -48,6 +48,35 @@
                 </div>
             </div>
         <?php endif;?>
+        <!--timeline loop-->
+        <?php if( get_row_layout() == 'timeline' ): 
+            $events = get_sub_field('events');
+        ?>
+            <div class="timeline">
+                <?php 
+                foreach ($events as $key => $event) {
+                    // code...                   
+                        $title = $event['title'] ? "<h2>{$event['title']}</h2>" : '';
+                        $content = $event['content'];
+                        $align = ($key % 2 == 0) ? 'right' : 'left';
+                        $date = $event['date'];
+                        echo "
+                             <div class='timeline-container {$align}'>
+                                <div class='date'>{$date}</div>
+                                <i class='icon fa fa-grimace'></i>
+                                <div class='content'>
+                                    {$title}
+                                    {$content}                  
+                                </div>
+                              </div>
+                        ";
+                    }                
+                ?>
+
+            </div>
+        <?php endif;?>
+
+  
          <!--person loop-->
          <?php if( get_row_layout() == 'people' ): 
             $persons = get_sub_field('individuals');

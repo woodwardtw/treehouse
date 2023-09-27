@@ -35,6 +35,7 @@ defined( 'ABSPATH' ) || exit;
 	<div class="timeline-content">
 		<?php treehouse_timeline();?>
 	</div>
+		<?php get_template_part( 'loop-templates/content', 'flexcontent' );?>
 
 	<footer class="entry-footer">
 
