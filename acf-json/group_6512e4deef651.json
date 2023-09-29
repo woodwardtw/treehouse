@@ -130,7 +130,9 @@
                                 "yellow": "Yellow",
                                 "black": "Black",
                                 "white": "White",
-                                "gray": "Gray"
+                                "gray": "Gray",
+                                "blue": "Blue",
+                                "light-blue": "Light blue"
                             },
                             "default_value": "white",
                             "return_format": "value",
@@ -209,7 +211,9 @@
                                 "yellow": "Yellow",
                                 "black": "Black",
                                 "white": "White",
-                                "gray": "Gray"
+                                "gray": "Gray",
+                                "blue": "Blue",
+                                "light-blue": "Light blue"
                             },
                             "default_value": "white",
                             "return_format": "value",
@@ -398,5 +402,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1695828851
+    "modified": 1695994296
 }

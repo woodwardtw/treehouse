@@ -6,13 +6,13 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --bs-blue: #0d6efd;
+  --bs-blue: #022543;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
   --bs-red: #dc3545;
   --bs-orange: #ea854c;
-  --bs-yellow: #F6D155;
+  --bs-yellow: #f4b824;
   --bs-green: #198754;
   --bs-teal: #20c997;
   --bs-cyan: #0dcaf0;
@@ -33,7 +33,7 @@
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
-  --bs-warning: #F6D155;
+  --bs-warning: #f4b824;
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
@@ -41,7 +41,7 @@
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
-  --bs-warning-rgb: 246, 209, 85;
+  --bs-warning-rgb: 244, 184, 36;
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
@@ -71,7 +71,7 @@
   --bs-link-color: #2a2e35;
   --bs-link-hover-color: #22252a;
   --bs-code-color: #d63384;
-  --bs-highlight-bg: #fdf6dd;
+  --bs-highlight-bg: #fdf1d3;
 }
 
 *,
@@ -2094,13 +2094,13 @@ progress {
 
 .table-warning {
   --bs-table-color: #000;
-  --bs-table-bg: #fdf6dd;
-  --bs-table-border-color: #e4ddc7;
-  --bs-table-striped-bg: #f0ead2;
+  --bs-table-bg: #fdf1d3;
+  --bs-table-border-color: #e4d9be;
+  --bs-table-striped-bg: #f0e5c8;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #e4ddc7;
+  --bs-table-active-bg: #e4d9be;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #eae4cc;
+  --bs-table-hover-bg: #eadfc3;
   --bs-table-hover-color: #000;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
@@ -3924,19 +3924,19 @@ textarea.form-control-lg {
 
 .btn-warning {
   --bs-btn-color: #000;
-  --bs-btn-bg: #F6D155;
-  --bs-btn-border-color: #F6D155;
+  --bs-btn-bg: #f4b824;
+  --bs-btn-border-color: #f4b824;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #f7d86f;
-  --bs-btn-hover-border-color: #f7d666;
-  --bs-btn-focus-shadow-rgb: 209, 178, 72;
+  --bs-btn-hover-bg: #f6c345;
+  --bs-btn-hover-border-color: #f5bf3a;
+  --bs-btn-focus-shadow-rgb: 207, 156, 31;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #f8da77;
-  --bs-btn-active-border-color: #f7d666;
+  --bs-btn-active-bg: #f6c650;
+  --bs-btn-active-border-color: #f5bf3a;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #000;
-  --bs-btn-disabled-bg: #F6D155;
-  --bs-btn-disabled-border-color: #F6D155;
+  --bs-btn-disabled-bg: #f4b824;
+  --bs-btn-disabled-border-color: #f4b824;
 }
 
 .btn-danger, .woocommerce-notices-wrapper .woocommerce-message.woocommerce-error a.button {
@@ -4059,19 +4059,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-warning {
-  --bs-btn-color: #F6D155;
-  --bs-btn-border-color: #F6D155;
+  --bs-btn-color: #f4b824;
+  --bs-btn-border-color: #f4b824;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #F6D155;
-  --bs-btn-hover-border-color: #F6D155;
-  --bs-btn-focus-shadow-rgb: 246, 209, 85;
+  --bs-btn-hover-bg: #f4b824;
+  --bs-btn-hover-border-color: #f4b824;
+  --bs-btn-focus-shadow-rgb: 244, 184, 36;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #F6D155;
-  --bs-btn-active-border-color: #F6D155;
+  --bs-btn-active-bg: #f4b824;
+  --bs-btn-active-border-color: #f4b824;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #F6D155;
+  --bs-btn-disabled-color: #f4b824;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #F6D155;
+  --bs-btn-disabled-border-color: #f4b824;
   --bs-gradient: none;
 }
 
@@ -5762,12 +5762,12 @@ textarea.form-control-lg {
 }
 
 .alert-warning {
-  --bs-alert-color: #625422;
-  --bs-alert-bg: #fdf6dd;
-  --bs-alert-border-color: #fcf1cc;
+  --bs-alert-color: #624a0e;
+  --bs-alert-bg: #fdf1d3;
+  --bs-alert-border-color: #fceabd;
 }
 .alert-warning .alert-link {
-  color: #4e431b;
+  color: #4e3b0b;
 }
 
 .alert-danger, .woocommerce-notices-wrapper .woocommerce-message.woocommerce-error {
@@ -6154,17 +6154,17 @@ textarea.form-control-lg {
 }
 
 .list-group-item-warning {
-  color: #625422;
-  background-color: #fdf6dd;
+  color: #624a0e;
+  background-color: #fdf1d3;
 }
 .list-group-item-warning.list-group-item-action:hover, .list-group-item-warning.list-group-item-action:focus {
-  color: #625422;
-  background-color: #e4ddc7;
+  color: #624a0e;
+  background-color: #e4d9be;
 }
 .list-group-item-warning.list-group-item-action.active {
   color: #fff;
-  background-color: #625422;
-  border-color: #625422;
+  background-color: #624a0e;
+  border-color: #624a0e;
 }
 
 .list-group-item-danger {
@@ -7791,7 +7791,7 @@ textarea.form-control-lg {
 
 .text-bg-warning {
   color: #000 !important;
-  background-color: RGBA(246, 209, 85, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(244, 184, 36, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-danger {
@@ -7838,10 +7838,10 @@ textarea.form-control-lg {
 }
 
 .link-warning {
-  color: #F6D155 !important;
+  color: #f4b824 !important;
 }
 .link-warning:hover, .link-warning:focus {
-  color: #f8da77 !important;
+  color: #f6c650 !important;
 }
 
 .link-danger {
@@ -12964,16 +12964,16 @@ a.skip-link:not(:focus):not(:focus-within) {
 
 .has-blue-color,
 .has-blue-color:visited {
-  color: #0d6efd;
+  color: #022543;
 }
 
 .has-blue-background-color {
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background-color: #022543;
+  border-color: #022543;
 }
 
 .wp-block-button:hover .wp-block-button__link.has-white-background-color.has-blue-color {
-  color: #0d6efd;
+  color: #022543;
 }
 
 .has-indigo-color,
@@ -13048,16 +13048,16 @@ a.skip-link:not(:focus):not(:focus-within) {
 
 .has-yellow-color,
 .has-yellow-color:visited {
-  color: #F6D155;
+  color: #f4b824;
 }
 
 .has-yellow-background-color {
-  background-color: #F6D155;
-  border-color: #F6D155;
+  background-color: #f4b824;
+  border-color: #f4b824;
 }
 
 .wp-block-button:hover .wp-block-button__link.has-white-background-color.has-yellow-color {
-  color: #F6D155;
+  color: #f4b824;
 }
 
 .has-green-color,
@@ -13216,16 +13216,16 @@ a.skip-link:not(:focus):not(:focus-within) {
 
 .has-warning-color,
 .has-warning-color:visited {
-  color: #F6D155;
+  color: #f4b824;
 }
 
 .has-warning-background-color {
-  background-color: #F6D155;
-  border-color: #F6D155;
+  background-color: #f4b824;
+  border-color: #f4b824;
 }
 
 .wp-block-button:hover .wp-block-button__link.has-white-background-color.has-warning-color {
-  color: #F6D155;
+  color: #f4b824;
 }
 
 .has-danger-color,
@@ -16511,8 +16511,13 @@ figure {
   background-color: #ffffff;
 }
 
+figure img {
+  width: 100%;
+  height: auto;
+}
+
 figcaption, .wp-caption-text {
-  margin: 15px 20px;
+  margin: 15px 0;
   font-size: 0.8rem;
   font-weight: 300;
   line-height: 0.9rem;
@@ -16525,6 +16530,26 @@ figcaption, .wp-caption-text {
   margin: 0 20px 0 80px;
 }
 
+.navbar-brand {
+  font-family: "Abril Fatface", serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+#main-menu a {
+  color: #022543;
+  transition: all 0.4s ease;
+}
+
+#main-menu a:hover {
+  background-color: #e5f1fa;
+}
+
+/*full page*/
+#full-width-page-wrapper {
+  padding: 0;
+}
+
 /*flex content*/
 .title-row {
   padding: 30px 100px;
@@ -16535,7 +16560,7 @@ figcaption, .wp-caption-text {
 }
 
 .topic-row.green {
-  background-color: #198754;
+  background-color: #0d5d38;
 }
 
 .topic-row.black {
@@ -16543,11 +16568,19 @@ figcaption, .wp-caption-text {
 }
 
 .topic-row.yellow {
-  background-color: #F6D155;
+  background-color: #f4b824;
 }
 
 .topic-row.gray {
   background-color: #efefef;
+}
+
+.topic-row.blue {
+  background-color: #022543;
+}
+
+.topic-row.light-blue {
+  background-color: #e5f1fa;
 }
 
 .topic-row.green p, .topic-row.green h1, .topic-row.green .h1, .topic-row.green h2, .topic-row.green .h2, .topic-row.green h3, .topic-row.green .h3,
@@ -16556,7 +16589,7 @@ figcaption, .wp-caption-text {
 }
 
 blockquote.big-quote {
-  box-shadow: 15px 15px #efefef;
+  box-shadow: 15px 15px #e5f1fa;
   border: 2px solid #000000;
 }
 
@@ -16574,7 +16607,7 @@ blockquote.big-quote {
 }
 
 blockquote.big-quote:before {
-  color: #006837;
+  color: #022543;
   content: "“";
   font-size: 4em;
   line-height: 0.1em;
@@ -16609,7 +16642,7 @@ blockquote.big-quote footer p {
   content: "";
   position: absolute;
   width: 2px;
-  background: #006837;
+  background: #0d5d38;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -16639,7 +16672,7 @@ blockquote.big-quote footer p {
   top: calc(50% - 8px);
   right: -8px;
   background: #ffffff;
-  border: 2px solid #006837;
+  border: 2px solid #0d5d38;
   border-radius: 16px;
   z-index: 1;
 }
@@ -16655,7 +16688,7 @@ blockquote.big-quote footer p {
   height: 2px;
   top: calc(50% - 1px);
   right: 8px;
-  background: #006837;
+  background: #0d5d38;
   z-index: 1;
 }
 
@@ -16670,7 +16703,7 @@ blockquote.big-quote footer p {
   text-align: right;
   font-size: 14px;
   font-weight: bold;
-  color: #006837;
+  color: #0d5d38;
   text-transform: uppercase;
   letter-spacing: 1px;
   z-index: 1;
@@ -16691,12 +16724,12 @@ blockquote.big-quote footer p {
   height: 40px;
   padding: 9px 0;
   top: calc(50% - 20px);
-  background: #F6D155;
-  border: 2px solid #006837;
+  background: #f4b824;
+  border: 2px solid #0d5d38;
   border-radius: 40px;
   text-align: center;
   font-size: 18px;
-  color: #006837;
+  color: #022543;
   z-index: 1;
 }
 
@@ -16710,7 +16743,7 @@ blockquote.big-quote footer p {
 
 .timeline-container .content {
   padding: 30px 90px 30px 30px;
-  background: #F6D155;
+  background: #f4b824;
   position: relative;
   border-radius: 0 500px 500px 0;
 }
@@ -16723,7 +16756,7 @@ blockquote.big-quote footer p {
 .timeline-container .content h2, .timeline-container .content .h2 {
   margin: 0 0 10px 0;
   font-size: 2.5rem;
-  color: #006837;
+  color: #0d5d38;
 }
 
 .timeline-container .content p {
@@ -16733,7 +16766,7 @@ blockquote.big-quote footer p {
 .timeline-container .content blockquote p {
   margin-left: 50px;
   padding: 0 20px;
-  border-left: 2px solid #006837;
+  border-left: 2px solid #0d5d38;
 }
 
 .timeline-container blockquote {
@@ -16742,7 +16775,7 @@ blockquote.big-quote footer p {
 }
 
 .timeline-container blockquote:before {
-  color: #006837;
+  color: #0d5d38;
   content: "“";
   font-size: 4em;
   line-height: 0.1em;

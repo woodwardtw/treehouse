@@ -34,8 +34,13 @@ figure {
   background-color: #ffffff;
 }
 
+figure img {
+	width: 100%;
+	height: auto;
+}
+
 figcaption, .wp-caption-text {
-  margin: 15px 20px;
+  margin: 15px 0;
   font-size: .8rem;
   font-weight: 300;
   line-height: .9rem;
@@ -48,6 +53,25 @@ figcaption, .wp-caption-text {
 	margin: 0 20px 0 80px;
 }
 
+.navbar-brand {
+	font-family: 'Abril Fatface', serif;
+	font-weight: 700;
+	font-size: 1.3rem;
+}
+
+#main-menu a{
+	color: $blue;	
+	transition: all .4s ease;
+}
+
+#main-menu a:hover {
+	background-color: $light-blue;
+}
+
+/*full page*/
+#full-width-page-wrapper {
+	padding: 0;
+}
 
 /*flex content*/
 
@@ -60,7 +84,7 @@ figcaption, .wp-caption-text {
 }
 
 .topic-row.green{
-	background-color: $green;
+	background-color: $dark-green;
 }
 
 .topic-row.black {
@@ -75,21 +99,29 @@ figcaption, .wp-caption-text {
 	background-color: $gray;
 }
 
+.topic-row.blue {
+	background-color: $blue;
+}
+
+.topic-row.light-blue {
+	background-color: $light-blue;
+}
+
 .topic-row.green p, .topic-row.green h1, .topic-row.green h2, .topic-row.green h3, 
 .topic-row.black p, .topic-row.black h1, .topic-row.black h2, .topic-row.black h3 {
 	color: #fff;
 }
 
 blockquote.big-quote {
-	// background-color: rgba($dark-green,.2);
-	box-shadow: 15px 15px $gray;
+	// background-color: rgba($blue,.2);
+	box-shadow: 15px 15px $light-blue;
 	border: 2px solid #000000;
 }
 
 blockquote.big-quote p{
 	margin-left: 50px;
 	padding: 0 40px;
-	// border-left: 8px solid $dark-green;	
+	// border-left: 8px solid $blue;	
 	font-size: 2rem;
 	line-height: 1.2;
 	font-style: italic;
@@ -101,7 +133,7 @@ blockquote.big-quote {
 }
 
 blockquote.big-quote:before {
-  color: $dark-green;
+  color: $blue;
   content: '\201C';
   font-size: 4em;
   line-height: 0.1em;
@@ -223,7 +255,7 @@ blockquote.big-quote footer p {
   border-radius: 40px;
   text-align: center;
   font-size: 18px;
-  color: $dark-green;
+  color: $blue;
   z-index: 1;
 }
 
@@ -239,7 +271,7 @@ blockquote.big-quote footer p {
 
 .timeline-container .content {
   padding: 30px 90px 30px 30px;
-  background: #F6D155;
+  background: $yellow;
   position: relative;
   border-radius: 0 500px 500px 0;
 }
