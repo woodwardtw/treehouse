@@ -16742,21 +16742,21 @@ blockquote.big-quote footer p {
 }
 
 .timeline-container .content {
-  padding: 30px 90px 30px 30px;
+  padding: 30px 90px 30px 50px;
   background: #f4b824;
   position: relative;
   border-radius: 0 500px 500px 0;
 }
 
 .timeline-container.right .content {
-  padding: 30px 30px 30px 90px;
+  padding: 30px 30px 30px 120px;
   border-radius: 500px 0 0 500px;
 }
 
 .timeline-container .content h2, .timeline-container .content .h2 {
   margin: 0 0 10px 0;
   font-size: 2.5rem;
-  color: #0d5d38;
+  color: #000000;
 }
 
 .timeline-container .content p {
