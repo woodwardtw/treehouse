@@ -391,6 +391,13 @@
                 "operator": "==",
                 "value": "page-templates\/timeline.php"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "project"
+            }
         ]
     ],
     "menu_order": 0,
@@ -402,5 +409,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1695994296
+    "modified": 1695999836
 }

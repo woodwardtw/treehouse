@@ -3,6 +3,26 @@
     "title": "Projects",
     "fields": [
         {
+            "key": "field_6517032edb8f3",
+            "label": "Project Description",
+            "name": "project_description",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
             "key": "field_6516e206684eb",
             "label": "Students",
             "name": "students",
@@ -21,7 +41,7 @@
             "min": 0,
             "max": 0,
             "collapsed": "",
-            "button_label": "Add Row",
+            "button_label": "Add Student",
             "rows_per_page": 20,
             "sub_fields": [
                 {
@@ -93,6 +113,48 @@
                     "parent_repeater": "field_6516e206684eb"
                 }
             ]
+        },
+        {
+            "key": "field_6517035fdb8f4",
+            "label": "Link to more information",
+            "name": "link",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_651704ada2825",
+            "label": "Year awarded",
+            "name": "year_awarded",
+            "aria-label": "",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "award-year",
+            "add_term": 1,
+            "save_terms": 1,
+            "load_terms": 1,
+            "return_format": "object",
+            "field_type": "select",
+            "allow_null": 1,
+            "bidirectional": 0,
+            "multiple": 0,
+            "bidirectional_target": []
         }
     ],
     "location": [
@@ -104,14 +166,16 @@
             }
         ]
     ],
-    "menu_order": 0,
+    "menu_order": -10,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "the_content"
+    ],
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1695999489
+    "modified": 1696007565
 }
