@@ -123,7 +123,7 @@ figcaption, .wp-caption-text {
 blockquote.big-quote {
 	// background-color: rgba($blue,.2);
 	box-shadow: 15px 15px $light-blue;
-	border: 2px solid #000000;
+	border: 2px solid $light-blue;
 }
 
 blockquote.big-quote p{
@@ -168,7 +168,7 @@ blockquote.big-quote footer p {
   position: relative;
   width: 100%;
   max-width: 95%;
-  margin: 0 auto;
+  margin: 100px auto;
   padding: 15px 0;
 }
 
@@ -302,8 +302,8 @@ blockquote.big-quote footer p {
 
 .timeline-container .content blockquote p{
 	margin-left: 50px;
-	padding: 0 20px;
-	border-left: 2px solid $dark-green;	
+	padding: 0 20px 20px 0;
+	// border-left: 2px solid $dark-green;	
 }
 
 .timeline-container blockquote {
