@@ -36,6 +36,47 @@ function treehouse_timeline(){
 	}
 }
 
+//PROJECT FUNCTIONS
+function treehouse_project_description(){
+	if(get_field('project_description')){
+		$desc = get_field('project_description');
+		echo "
+			<div class='project-block'>
+			{$desc}
+			</div>
+		";
+	}
+}
+
+function treehouse_project_students(){
+	$html = '';
+	$plural = count(get_field('students')) ? 's' : '';
+	if( have_rows('students') ):
+		echo "
+			<div class='project-sidebar'>
+				<h2>Student{$plural}</h2>
+		";
+	    // Loop through rows.
+	    while( have_rows('students') ) : the_row();
+
+	        // Load sub field value.
+	        $name = get_sub_field('student_name');
+	        $class = get_sub_field('class_of');
+	        // Do something...
+	        echo "
+	        	<div class='project-student-block'>
+	        		{$name} - class of {$class}
+	        	</div>
+	        ";
+	    // End loop.
+	    endwhile;	
+	    echo "</div>";    
+		else :
+		    // Do something...
+		endif;
+	}
+
+
 
 //change title for ACF flexible layout in collapsed mode
 

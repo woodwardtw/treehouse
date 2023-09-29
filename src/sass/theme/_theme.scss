@@ -163,6 +163,25 @@ blockquote.big-quote footer p {
 	font-weight: 100;
 }
 
+/*PROJECT STUFF*/
+
+.project-sidebar {
+	background-color: $blue;
+	color: #ffffff;
+	font-family: 'Abril Fatface', serif;
+	font-weight: 600;
+	padding: 50px 50px 100px 50px ;
+}
+
+.project-sidebar h2 {
+	margin-top: 80px;
+}
+
+.project-student-block {
+	font-size: 1.5rem;
+	font-weight: 100;
+}
+
 /*TIMELINE STUFF*/
 .timeline {
   position: relative;

@@ -12,10 +12,10 @@ defined( 'ABSPATH' ) || exit;
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 <?php
-	echo get_the_post_thumbnail( $post->ID, 'full', array('class'=>'img-fluid aligncenter') );	
+	echo get_the_post_thumbnail( $post->ID, 'large', array('class'=>'img-fluid aligncenter') );	
 	?>
 	<div class="row title-row">		
-		<div class="col-md-6 offset-md-3">
+		<div class="col-md-6 offset-md-1">
 			<?php 
 			if ( ! is_page_template( 'page-templates/no-title.php' ) ) {
 					the_title(
@@ -28,8 +28,12 @@ defined( 'ABSPATH' ) || exit;
 				<?php
 				the_content();		
 				understrap_link_pages();
+				treehouse_project_description();
 				?>
-			</div><!-- .entry-content -->
+			</div><!-- .entry-content -->			
+		</div>
+		<div class="col-md-4 offset-md-1">
+				<?php treehouse_project_students();?>
 		</div>
 	</div>
 	<?php get_template_part( 'loop-templates/content', 'flexcontent' );?>
