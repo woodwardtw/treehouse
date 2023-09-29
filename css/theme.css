@@ -16808,9 +16808,31 @@ blockquote.big-quote footer p {
   font-family: serif;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 767px) {
+  h1, .h1 {
+    font-size: 3.5rem;
+  }
+
+  h2, .h2 {
+    font-size: 2.5rem;
+  }
+
+  blockquote.big-quote p {
+    margin-left: 15px;
+    padding: 0 10px;
+  }
+
+  blockquote.big-quote footer p {
+    margin-left: 15px;
+  }
+
   .title-row, .topic-row {
     padding: 50px 20px;
+  }
+
+  .menu-logo {
+    margin: 0 20px 0 20px;
+    display: none;
   }
 
   .timeline::after {
