@@ -30,7 +30,7 @@ p {
 
 figure {
   padding: 10px;
-  border: 1px solid #000000;
+  border: 1px solid $med-gray;
   background-color: #ffffff;
 }
 
@@ -340,6 +340,12 @@ blockquote.big-quote footer p {
   font-family: serif;
 }
 
+#wrapper-footer, #wrapper-footer-full {
+	background-color: $blue;
+	color: #ffffff;
+	padding: 200px 5vw;
+}
+
 @media (max-width: 767px) {
 	h1 {
 		font-size: 3.5rem;
@@ -382,7 +388,8 @@ blockquote.big-quote footer p {
     left: 0%;
   }
 
-.timeline::after,.timeline-container::before,
+.timeline::after,
+.timeline-container::before,
 .timeline-container.left::before,
   .timeline-container.right::before {
     display: none;
