@@ -119,6 +119,7 @@ figcaption, .wp-caption-text {
 	background-color: $light-blue;
 }
 
+.topic-row.dark p, .topic-row.dark h1, .topic-row.dark h2, .topic-row.dark h3, .topic-row.dark .memory,
 .topic-row.green p, .topic-row.green h1, .topic-row.green h2, .topic-row.green h3, .topic-row.green .memory,
 .topic-row.black p, .topic-row.black h1, .topic-row.black h2, .topic-row.black h3, .topic-row.black .memory,
 .topic-row.blue p, .topic-row.blue h1, .topic-row.blue h2, .topic-row.blue h3, .topic-row.blue .memory   {
@@ -131,9 +132,13 @@ figcaption, .wp-caption-text {
 	border: 1px solid #fff;
 }
 
+.memory-giver {
+	font-family: abril-fatface, serif;
+	font-size: 1.5rem;
+}
+
 .col-md-8:nth-of-type(even) .memory{
 	margin-left: 60px;
-	border-right: 3px solid red;
 }
 
 .col-md-8:nth-of-type(odd) .memory{

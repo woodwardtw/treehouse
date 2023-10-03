@@ -135,7 +135,7 @@
         <?php if( get_row_layout() == 'posts' ):
         $title = 'Learn more';
         if(get_sub_field('title')){
-             $title = get_sub_field('title');
+             $title =get_sub_field('title');
         }
         $slug = sanitize_title( $title);
         $color = get_sub_field('color');
@@ -162,8 +162,8 @@
                 $title = get_the_title();
                 $url = get_the_permalink();
                 $name = get_field('name');
-                $class = get_field('class');
-                $class_span = get_field('class') ? "<span class='class-year'>{$class}</span>" : '';
+                $class =  substr(get_field('class'), -2);
+                $class_span = get_field('class') ? "<span class='class-year'>'{$class}</span>" : '';
                 if(get_the_content()){
                      $excerpt = get_the_content();
                 }
@@ -174,7 +174,7 @@
                       echo "
                             <div class='col-md-8 offset-md-2'>
                                 <div class='post-block memory class-of-{$class}'>
-                                        <p>{$excerpt}</p>
+                                        <div class='memory-blurb'><p>{$excerpt}</p></div>
                                         <div class='memory-giver'>{$name} {$class_span}</div>
                                 </div>
                             </div>
