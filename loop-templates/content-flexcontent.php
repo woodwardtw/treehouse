@@ -161,23 +161,38 @@
                 // Do Stuff
                 $title = get_the_title();
                 $url = get_the_permalink();
+                $name = get_field('name');
+                $class = get_field('class');
+                $class_span = get_field('class') ? "<span class='class-year'>{$class}</span>" : '';
                 if(get_the_content()){
-                     $excerpt = wp_trim_words(get_the_content(), 30);
+                     $excerpt = get_the_content();
                 }
                 if(get_field('project_summary')){
                    $excerpt =  wp_trim_words(get_field('project_summary'), 30); 
                 }
+                if(in_category('tree-house-memory')){
+                      echo "
+                            <div class='col-md-8 offset-md-2'>
+                                <div class='post-block memory class-of-{$class}'>
+                                        <p>{$excerpt}</p>
+                                        <div class='memory-giver'>{$name} {$class_span}</div>
+                                </div>
+                            </div>
+                        ";
+
+                } else {
+                      echo "
+                            <div class='col-md-8 offset-md-2'>
+                                <div class='post-block'>
+                                        <h3>{$title}</h3>                           
+                                        <p>{$excerpt}</p>
+                                </div>
+                            </div>
+                        ";
+
+                }
                
-                echo "
-                    <div class='col-md-8 offset-md-2'>
-                        <div class='post-block'>
-                            <a class='post-link stretched-link' href='{$url}'>
-                                <h3>{$title}</h3>                           
-                                <p>{$excerpt}</p>
-                             </a>
-                        </div>
-                    </div>
-                ";
+              
                 endwhile;
             endif;
 
