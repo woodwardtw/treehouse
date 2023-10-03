@@ -63,7 +63,7 @@
                         echo "
                              <div class='timeline-container {$align}'>
                                 <div class='date'>{$date}</div>
-                                <i class='icon fa fa-grimace'></i>
+                                <div class='icon'></div>
                                 <div class='content'>
                                     {$title}
                                     {$content}                  
