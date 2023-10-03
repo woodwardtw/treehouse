@@ -16552,6 +16552,10 @@ figcaption, .wp-caption-text {
 }
 
 /*full page*/
+.entry-title {
+  text-align: center;
+}
+
 #full-width-page-wrapper {
   padding: 0;
 }

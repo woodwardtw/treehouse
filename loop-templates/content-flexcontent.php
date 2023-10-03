@@ -138,7 +138,8 @@
              $title = get_sub_field('title');
         }
         $slug = sanitize_title( $title);
-            echo "<div class='row topic-row full-width-row'>
+        $color = get_sub_field('color');
+            echo "<div class='row topic-row full-width-row {$color}'>
                     <div class='col-md-8 offset-md-2'>
                         <h2 id='{$slug}'>{$title}</h2>
                     </div>

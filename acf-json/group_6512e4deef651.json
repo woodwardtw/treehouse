@@ -399,20 +399,20 @@
                         },
                         {
                             "key": "field_651c052c4ee16",
-                            "label": "",
-                            "name": "",
+                            "label": "Category",
+                            "name": "category",
                             "aria-label": "",
                             "type": "taxonomy",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "",
+                                "width": "33",
                                 "class": "",
                                 "id": ""
                             },
                             "taxonomy": "category",
-                            "add_term": 1,
+                            "add_term": 0,
                             "save_terms": 1,
                             "load_terms": 1,
                             "return_format": "id",
@@ -432,7 +432,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "",
+                                "width": "33",
                                 "class": "",
                                 "id": ""
                             },
@@ -446,6 +446,37 @@
                             "other_choice": 0,
                             "layout": "vertical",
                             "save_other_choice": 0
+                        },
+                        {
+                            "key": "field_651c0a28152ce",
+                            "label": "Color",
+                            "name": "color",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "green": "Green",
+                                "yellow": "Yellow",
+                                "black": "Black",
+                                "white": "White",
+                                "gray": "Gray",
+                                "blue": "Blue",
+                                "light-blue": "Light blue"
+                            },
+                            "default_value": "white",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
                         }
                     ],
                     "min": "",
@@ -489,5 +520,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1696335232
+    "modified": 1696336550
 }
