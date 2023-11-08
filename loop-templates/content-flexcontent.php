@@ -133,10 +133,10 @@
          
         <!--CUSTOM POSTS BY CATEGORY-->
         <?php if( get_row_layout() == 'posts' ):
-        $title = 'Learn more';
-        if(get_sub_field('title')){
-             $title =get_sub_field('title');
-        }
+            $title = 'Learn more';
+            if(get_sub_field('title')){
+                 $title =get_sub_field('title');
+            }
         $slug = sanitize_title( $title);
         $color = get_sub_field('color');
             echo "<div class='row topic-row full-width-row {$color}'>
@@ -165,10 +165,10 @@
                 $class =  substr(get_field('class'), -2);
                 $class_span = get_field('class') ? "<span class='class-year'>'{$class}</span>" : '';
                 if(get_the_content()){
-                     $excerpt = get_the_content();
+                     $excerpt = wp_trim_words(get_the_content(), 30);
                 }
-                if(get_field('project_summary')){
-                   $excerpt =  wp_trim_words(get_field('project_summary'), 30); 
+                if(get_field('project_description') != ''){
+                   $excerpt =  wp_trim_words(get_field('project_description'), 30); 
                 }
                 if(in_category('tree-house-memory')){
                       echo "
@@ -184,7 +184,7 @@
                       echo "
                             <div class='col-md-8 offset-md-2'>
                                 <div class='post-block'>
-                                        <h3>{$title}</h3>                           
+                                        <a href='{$url}'><h3>{$title}</h3></a>                           
                                         <p>{$excerpt}</p>
                                 </div>
                             </div>
