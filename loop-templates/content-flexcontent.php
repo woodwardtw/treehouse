@@ -201,5 +201,59 @@
             echo "</div>";
         ?>
         <?php endif;?>
+         <!--AUTO TIMELINE WITH CUSTOM POSTS BY CATEGORY-->
+        <?php if( get_row_layout() == 'posts' ):
+            $title = 'Learn more';
+            if(get_sub_field('title')){
+                 $title =get_sub_field('title');
+            }
+        $slug = sanitize_title( $title);
+        $color = get_sub_field('color');
+            echo "<div class='row topic-row full-width-row {$color}'>
+                    <div class='col-md-8 offset-md-2'>
+                        <h2 id='{$slug}'>{$title}</h2>
+                    </div>
+                        ";
+         
+            $cats = get_sub_field('category');
+            $type = get_sub_field('post_type');
+            $args = array(
+                'category__and' => $cats,
+                'post_type' => $type,
+                'posts_per_page' => 10,
+                'paged' => get_query_var('paged')
+            );
+            $the_query = new WP_Query( $args );
+
+            // The Loop
+            if ( $the_query->have_posts() ) :
+                echo '<div class="timeline">';
+                $key = 0;
+                while ( $the_query->have_posts() ) : $the_query->the_post();
+                // Do Stuff
+                $title = get_the_title();
+                $url = get_the_permalink();
+                $align = ($key % 2 == 0) ? 'right' : 'left';
+
+                $date = get_the_terms($post->ID, 'award-year')[0]->name;
+            
+                        echo "
+                             <div class='timeline-container {$align}'>
+                                <div class='date'>{$date}</div>
+                                <div class='icon'></div>
+                                <div class='content'>
+                                    <a href='{$url}'><h2>{$title}</h2></a>
+                                </div>
+                              </div>
+                        ";                 
+                $key++;
+                endwhile;
+            endif;
+
+            // Reset Post Data
+            wp_reset_postdata();
+            echo "</div></div>";
+        ?>
+        <?php endif;?>
     <?php endwhile; ?>
 <?php endif; ?>
