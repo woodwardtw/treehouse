@@ -50,6 +50,7 @@ function treehouse_project_description(){
 
 function treehouse_project_students(){
 	$html = '';
+	$students = get_field('students');
 	$plural = count(get_field('students')) ? 's' : '';
 	if( have_rows('students') ):
 		echo "

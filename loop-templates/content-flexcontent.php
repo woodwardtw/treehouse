@@ -236,13 +236,25 @@
                 $align = ($key % 2 == 0) ? 'right' : 'left';
 
                 $date = get_the_terms($post->ID, 'award-year')[0]->name;
-            
+                $thumb = get_the_post_thumbnail($post->ID,'thumbnail');
+                 if(get_the_content()){
+                     $excerpt = wp_trim_words(get_the_content(), 30);
+                }
+                if(get_field('project_description') != ''){
+                   $excerpt =  wp_trim_words(get_field('project_description'), 30); 
+                }
                         echo "
                              <div class='timeline-container {$align}'>
                                 <div class='date'>{$date}</div>
                                 <div class='icon'></div>
-                                <div class='content'>
-                                    <a href='{$url}'><h2>{$title}</h2></a>
+                                <div class='auto-timeline content'>
+                                    <div class='timeline-img'>{$thumb}</div>
+                                    <div class='timeline-content'>
+                                        <a href='{$url}'><h2>{$title}</h2></a>
+                                        <div class='excerpt'>
+                                            {$excerpt}
+                                        </div> 
+                                    </div>                               
                                 </div>
                               </div>
                         ";                 

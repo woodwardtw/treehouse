@@ -16832,6 +16832,21 @@ blockquote.big-quote footer p {
   font-family: serif;
 }
 
+.auto-timeline {
+  display: flex;
+  grid-gap: 20px;
+  justify-content: flex-start;
+  flex-wrap: no-wrap;
+}
+
+.timeline-img {
+  flex: 1;
+}
+
+.timeline-content {
+  flex: 3;
+}
+
 #wrapper-footer, #wrapper-footer-full {
   background-color: #022543;
   color: #ffffff;
