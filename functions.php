@@ -77,12 +77,12 @@ add_filter( 'tiny_mce_before_init', __NAMESPACE__ . '\\mce_formats' );
 function treehouse_reset_year($new_status, $old_status, $post){
 	if($post->post_type == 'project'){
 			remove_action( 'transition_post_status', 'treehouse_reset_year', 10 );
-			$years = get_the_terms($post->ID, 'award-year');
-			$start_date = get_the_date('Y-m-d',$post->ID);			
+			$new_year = get_the_terms($post->ID, 'award-year')[0]->name;//gets oldest year from award terms
+			$og_date = strval(get_the_date('Y-m-d',$post->ID));		
+			$new_date = $new_year . substr($og_date, -6);	
 			$args = array(
 				'ID'            => $post->ID,
-				'post_date'     => '2011-01-02',
-				'post_content'  => $start_date . ' - ' . $years[0]->name
+				'post_date'     => $new_date,
 			);
 		    wp_update_post( $args );
 		    add_action( 'transition_post_status', 'treehouse_reset_year', 10, 3 );	

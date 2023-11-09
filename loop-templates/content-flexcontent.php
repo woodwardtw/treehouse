@@ -221,7 +221,9 @@
                 'category__and' => $cats,
                 'post_type' => $type,
                 'posts_per_page' => -1,
-                'paged' => get_query_var('paged')
+                'paged' => get_query_var('paged'),
+                'orderby' => 'date',
+                'order'   => 'ASC',
             );
             $the_query = new WP_Query( $args );
 
