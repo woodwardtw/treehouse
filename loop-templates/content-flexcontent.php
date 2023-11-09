@@ -220,7 +220,7 @@
             $args = array(
                 'category__and' => $cats,
                 'post_type' => $type,
-                'posts_per_page' => 10,
+                'posts_per_page' => -1,
                 'paged' => get_query_var('paged')
             );
             $the_query = new WP_Query( $args );
@@ -231,18 +231,21 @@
                 $key = 0;
                 while ( $the_query->have_posts() ) : $the_query->the_post();
                 // Do Stuff
-                $title = get_the_title();
-                $url = get_the_permalink();
-                $align = ($key % 2 == 0) ? 'right' : 'left';
-
-                $date = get_the_terms($post->ID, 'award-year')[0]->name;
-                $thumb = get_the_post_thumbnail($post->ID,'thumbnail');
-                 if(get_the_content()){
-                     $excerpt = wp_trim_words(get_the_content(), 30);
-                }
-                if(get_field('project_description') != ''){
-                   $excerpt =  wp_trim_words(get_field('project_description'), 30); 
-                }
+                    $title = get_the_title();
+                    $url = get_the_permalink();
+                    $align = ($key % 2 == 0) ? 'right' : 'left';
+                    if(get_the_terms($post->ID, 'award-year')){
+                        $date = get_the_terms($post->ID, 'award-year')[0]->name;
+                    } else {
+                        $date = get_the_date('D M j', $post->ID);
+                    }
+                    $thumb = get_the_post_thumbnail($post->ID,'thumbnail');
+                    if(get_the_content()){
+                         $excerpt = wp_trim_words(get_the_content(), 30);
+                    }
+                    if(get_field('project_description') != ''){
+                       $excerpt =  wp_trim_words(get_field('project_description'), 30); 
+                    }
                         echo "
                              <div class='timeline-container {$align}'>
                                 <div class='date'>{$date}</div>

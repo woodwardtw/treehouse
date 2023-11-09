@@ -74,18 +74,23 @@ add_filter( 'tiny_mce_before_init', __NAMESPACE__ . '\\mce_formats' );
 
 
 
-function treehouse_reset_year($post_id, $post, $update){
-	$years = get_the_terms($post_id, 'award-year');
-	$args = array(
-		'ID'            => $post_id,
-		'post_date'     => '2001-01-01',
-	);
-    remove_action( 'publish_post', 'treehouse_reset_year', 10 );
-    wp_update_post( $args );
-    add_action( 'publish_post', 'treehouse_reset_year', 10, 3 );
+function treehouse_reset_year($new_status, $old_status, $post){
+	if($post->post_type == 'project'){
+			remove_action( 'transition_post_status', 'treehouse_reset_year', 10 );
+			$years = get_the_terms($post->ID, 'award-year');
+			$start_date = get_the_date('Y-m-d',$post->ID);			
+			$args = array(
+				'ID'            => $post->ID,
+				'post_date'     => '2011-01-02',
+				'post_content'  => $start_date . ' - ' . $years[0]->name
+			);
+		    wp_update_post( $args );
+		    add_action( 'transition_post_status', 'treehouse_reset_year', 10, 3 );	
+		    // 
+		}
+	
 	}
-	write_log('test');
-add_action( 'transition_project_status', 'treehouse_reset_year', 10, 3 );
+add_action( 'transition_post_status', 'treehouse_reset_year', 10, 3 );
 
 
 
