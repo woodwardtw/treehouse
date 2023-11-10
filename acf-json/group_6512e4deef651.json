@@ -620,6 +620,13 @@
                 "operator": "==",
                 "value": "project"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
         ]
     ],
     "menu_order": 0,
@@ -631,5 +638,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1698416959
+    "modified": 1699621916
 }

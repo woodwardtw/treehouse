@@ -19,8 +19,14 @@
         <div class='row topic-row <?php echo $color;?> d-flex align-items-center'>
 				<div class='col-md-5<?php echo $order_left;?>'>    
                     <figure>
-                        <?php echo wp_get_attachment_image( $image['ID'], 'large', '', array('class'=>'img-fluid aligncenter') ); ?>
-                        <figcaption><?php echo $image['caption']; ?></figcaption>
+                        <?php 
+                            if($image){
+                               echo wp_get_attachment_image( $image['ID'], 'large', '', array('class'=>'img-fluid aligncenter') ); 
+                                echo "<figcaption>{$image['caption']}</figcaption>";
+                           } else {
+                               echo 'Please add a picture.';
+                           }
+                             ?>
                     </figure>
                 </div>
             <div class='col-md-1 order-2'></div>
@@ -202,7 +208,7 @@
         ?>
         <?php endif;?>
          <!--AUTO TIMELINE WITH CUSTOM POSTS BY CATEGORY-->
-        <?php if( get_row_layout() == 'posts' ):
+        <?php if( get_row_layout() == 'auto-timeline' ):
             $title = 'Learn more';
             if(get_sub_field('title')){
                  $title =get_sub_field('title');
