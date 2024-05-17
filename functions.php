@@ -145,6 +145,41 @@ function create_award_year_taxonomies()
 }
 
 
+// WP QUERY LOOP
+function treehouse_memories_query(){
+	$html = '';
+	 $args = array(
+	      'posts_per_page' => 50,
+	      'post_type'   => 'post', 
+	      'post_status' => 'publish', 
+	      'category_name' => 'Tree House Memory',
+	      'nopaging' => false,
+	   
+	  );
+	  $memory_query = new WP_Query( $args );
+        if( $memory_query->have_posts() ): 
+          while ( $memory_query->have_posts() ) : $memory_query->the_post();
+           //DO YOUR THING
+            $title = get_the_title();
+            $content = get_the_content();
+            $html .= "<div class='memory'>
+            			<h2>{$title}</h2>
+            			{$content}
+            		</div>
+            ";
+
+             endwhile;
+      endif;
+	    wp_reset_query();  // Restore global post data stomped by the_post().
+	   return $html;
+}                    
+
+add_shortcode( 'memories', 'treehouse_memories_query' );
+
+
+
+
+
 
 //LOGGER -- like frogger but more useful
 
