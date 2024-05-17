@@ -162,9 +162,15 @@ function treehouse_memories_query(){
            //DO YOUR THING
             $title = get_the_title();
             $content = get_the_content();
+            $name = get_field('name');
+            $class = get_field('class');
+            if ($class >0){
+            	$class = '<br>Class of ' . $class;
+            }
             $html .= "<div class='memory'>
             			<h2>{$title}</h2>
             			{$content}
+            			<div class='memory-sig'>{$name} {$class}</div>
             		</div>
             ";
 
