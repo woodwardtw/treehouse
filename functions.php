@@ -168,7 +168,7 @@ function treehouse_memories_query(){
             if ($class >0){
             	$class = '<br>Class of ' . $class;
             }
-            $html .= "<div class='memory'>
+            $html .= "<div class='memory-sub'>
             		  {$image}
             			{$content}
             			<div class='memory-sig'>{$name} {$class}</div>

@@ -16679,6 +16679,16 @@ blockquote.big-quote footer p {
 }
 
 /*submitted memories*/
+.memory-sub {
+  margin: 50px 0;
+  padding: 50px;
+  border: 1px solid #424242;
+}
+
+.memory-sub img {
+  margin-bottom: 30px;
+}
+
 .memory-sig {
   margin: 30px 0;
   font-size: 1.2rem;
