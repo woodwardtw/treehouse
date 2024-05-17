@@ -170,7 +170,6 @@ function treehouse_memories_query(){
             }
             $html .= "<div class='memory'>
             		  {$image}
-            			<h2>{$title}</h2>
             			{$content}
             			<div class='memory-sig'>{$name} {$class}</div>
             		</div>
